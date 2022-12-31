@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="styles.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400&display=swap" rel="stylesheet">
+
+<div id="form-heading">
+  <h1 id="title">Musician Survey</h1>
+  <p id="description">This form asks about your experiences playing music</p>
+</div>
+<div id="form-container">
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Name" required>
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="Email" required>
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number" min="3" max="120" placeholder="Age" required>
+    </div>
+
+    <div class="form-group">
+      <label id="learning-label" for="learning">How did you learn your instrument? </label>
+      <select name="dropdown" id="dropdown">
+        <option value="self-taught">Self-Taught</option>
+        <option value="lessons">Lessons</option>
+        <option value="YouTube">YouTube</option>
+        <option value="online-course">Online Course</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="radio-buttons">
+      <label id="music-question" for="music-question">Do you love music?</label>
+      <label>
+        <input value="yes" type="radio" class="input-radio" name="yes-answers">Yes!
+      </label>
+
+      <label for="absolutely">
+        <input value="absolutely" type="radio" class="input-radio" name="yes-answers">Absolutely!
+      </label>
+
+      <label for="of-course">
+        <input value="of-course" type="radio" class="input-radio" name="yes-answers">Of course!
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label id="instrument-questions">Select any musical instruments that you play:</label>
+      <label for="piano">
+        <input value="piano" class="input-checkbox" type="checkbox" name="instruments">Piano
+      </label>
+
+      <label for="guitar">
+        <input value="guitar" type="checkbox" class="input-checkbox" name="instruments">Guitar
+      </label>
+
+      <label for="drums">
+        <input value="drums" type="checkbox" class="input-checkbox" name="instruments">Drums
+      </label>
+
+      <label for="organ">
+        <input value="organ" type="checkbox" class="input-checkbox" name="instruments">Organ
+      </label>
+
+      <label for="bass">
+        <input value="bass" type="checkbox" class="input-checkbox" name="instruments">Bass Guitar
+      </label>
+
+      <label for="other">
+        <input value="other" type="checkbox" class="input-checkbox" name="instruments">Other
+      </label>
+    </div>
+
+    <div class="form-group">
+      <textarea name="comments" id="comments" cols="30" rows="10" placeholder="What does music mean to you?"></textarea>
+    </div>
+
+    <div class="form-group">
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+

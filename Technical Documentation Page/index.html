@@ -1,0 +1,112 @@
+<link rel="stylesheet" href="styles.css"> 
+<main id="main-doc">
+  <nav id="navbar">
+    <header class="list-title">Python</header>
+    <ul class="list-items">
+      <li class="list-item"><a class="nav-link" href="#What_is_Python?">What is Python?</a></li>
+      <li class="list-item"><a class="nav-link" href="#Tips_to_Get_Started">Tips to Get Started</a></li>
+      <li class="list-item"><a class="nav-link" href="#Lists_&_Dictionaries">Lists & Dictionaries</a></li>
+      <li class="list-item"><a class="nav-link" href="#Functions">Functions</a></li>
+      <li class="list-item"><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+  <div id="main-part">
+    <section class="main-section" id="What_is_Python?">
+      <header class="title">What is Python?</header>
+      <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.</p>
+      <p>The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python web site, https://www.python.org/, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.</p>
+      <p>The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.</p>
+    </section>
+    <section class="main-section" id="Tips_to_Get_Started">
+      <header>Tips to Get Started</header>
+      <ul>
+        <li><strong>Code Everyday:</strong> Muscle memory plays a large part in programming.</li>
+        <li><strong>Write It Out:</strong> Taking notes by hand is most beneficial for long-term retention.</li>
+        <li><strong>Take Breaks using the Pomodoro Technique:</strong> Work for 25 minutes, take a short break (5 - 10 minutes), and then repeat the process.</li>
+        <li><strong>Become a Bug Bounty Hunter:</strong> Going through code in the order it is executed helps and making sure each part works helps you debug code.</li>
+        <li><strong>Build Something, Anything:</strong> What you build is not as important as how you build it.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Lists_&_Dictionaries">
+      <header>Lists & Dictionaries</header>
+      <h2>Lists</h2>
+      <p>Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.</p>
+      <code>squares = [1, 4, 9, 16, 25]</code>
+      <p>Like strings (and all other built-in sequence types), lists can be indexed and sliced:</p>
+      <code>>>> squares[0] # indexing returns the item<br>
+        1</code>
+      <p>Lists also support operations like concatenation:</p>
+      <code>>>> squares + [36, 49, 64, 81, 100]<br>
+        1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+      </code>
+      <p>Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content: You can also add new items at the end of the list, by using the append() method (we will see more about methods later): Assignment to slices is also possible, and this can even change the size of the list or clear it entirely:</p>
+      <h2>Dictionaries</h2>
+      <p>Another useful data type built into Python is the dictionary (see Mapping Types — dict). Dictionaries are sometimes found in other languages as “associative memories” or “associative arrays”. Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by keys, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can’t use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like append() and extend().</p>
+      <p>It is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within one dictionary). A pair of braces creates an empty dictionary: {}. Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary; this is also the way dictionaries are written on output.</p>
+      <p>The main operations on a dictionary are storing a value with some key and extracting the value given the key. It is also possible to delete a key:value pair with del. If you store using a key that is already in use, the old value associated with that key is forgotten. It is an error to extract a value using a non-existent key.</p>
+      <p>Performing list(d) on a dictionary returns a list of all the keys used in the dictionary, in insertion order (if you want it sorted, just use sorted(d) instead). To check whether a single key is in the dictionary, use the in keyword.
+      </p>
+      <p>Here is a small example using a dictionary:
+        <code>
+          >>> tel = {'jack': 4098, 'sape': 4139}<br>
+          >>> tel['guido'] = 4127<br>
+          >>> tel<br>
+          {'jack': 4098, 'sape': 4139, 'guido': 4127}
+        </code>
+      </p>
+    </section>
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+      <h2>Creating a Function</h2>
+      <p>In Python a function is defined using the def keyword: <code><br>def my_function():<br>
+          print("Hello from a function")</code></p>
+      <h2>Calling a Function</h2>
+      <p>To call a function, use the function name followed by parenthesis:</p>
+      <code>def my_function():<br>
+        print("Hello from a function")<br>
+        <br>
+        my_function()</code>
+      <h2>Arguments</h2>
+      <p>Information can be passed into functions as arguments.</p>
+      <p>Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</p>
+      <p>The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name.</p>
+      <h2>Parameters or Arguments?</h2>
+      <p>The terms parameter and argument can be used for the same thing: information that are passed into a function. From a function's perspective:
+      <ul>
+        <li>A parameter is the variable listed inside the parentheses in the function definition.</li>
+        <li>An argument is the value that is sent to the function when it is called.</li>
+      </ul>
+      <h2>Number of Arguments?</h2>
+      <p>By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.</p>
+      <h2>Arbitrary Arguments, *args</h2>
+      <p>If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.</p>
+      <p>This way the function will receive a tuple of arguments, and can access the items accordingly:</p>
+      <h2>Keyword Arguments</h2>
+      <p>If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.</p>
+
+      <p>This way the function will receive a dictionary of arguments, and can access the items accordingly:</p>
+      <h2>Arbitrary Keyword Arguments, **kwargs</h2>
+      <h2>Default Parameter Value</h2>
+      <p>The following example shows how to use a default parameter value.</p>
+
+      <p>If we call the function without argument, it uses the default value:</p>
+      <h2>Passing a List as an Argument</h2>
+      <p>You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.</p>
+      <p>E.g. if you send a List as an argument, it will still be a List when it reaches the function.</p>
+      <h2>Return Values</h2>
+      <p>To let a function return a value, use the return statement.</p>
+      <h2>The pass Statement</h2>
+      <p>function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.</p>
+      <h2>Recursion</h2>
+      <p>Python also accepts function recursion, which means a defined function can call itself. Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result. The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming. In this example, tri_recursion() is a function that we have defined to call itself ("recurse"). We use the k variable as the data, which decrements (-1) every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0). To a new developer it can take some time to work out how exactly this works, best way to find out is by testing and modifying it.</p>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <p>To learn more about Python: <a href="https://www.python.org/" target="_blank">https://www.python.org/</a></p>
+      <p>What is Python?: <a href="https://docs.python.org/3/tutorial/index.html" target="_blank">https://docs.python.org/3/tutorial/index.html</a></p>
+      <p>Python Functions: <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank">https://www.w3schools.com/python/python_functions.asp</a></p>
+      <p>Beginner Tips: <a href="https://realpython.com/python-beginner-tips/" target="_blank">https://realpython.com/python-beginner-tips/</a></p>
+    </section>
+  </div>
+  <main>

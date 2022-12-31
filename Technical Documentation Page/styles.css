@@ -1,0 +1,61 @@
+#main-doc {
+  display: flex;
+}
+
+.list-title {
+  position: relative;
+  float: left;
+  font-family: Arial;
+  font-size: 40px;
+}
+
+.list-items {
+  position: relative;
+  right: 20%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: purple;
+}
+
+#main-section {
+  position: relative;
+  float: right;
+}
+
+header {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+code {
+  font-weight: 700;
+  color: purple;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+}
+
+.list-item {
+  list-style: none;
+  font-size: 30px;
+  font-family: Arial;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: #000000;
+  }
+  .main-section {
+    color: white;
+  }
+  header {
+    color: purple;
+  }
+}

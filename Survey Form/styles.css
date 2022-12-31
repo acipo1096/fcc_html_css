@@ -1,0 +1,114 @@
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #e2dfd2;
+}
+
+.form-group {
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#paragraph-description {
+  display: flex;
+  justify-content: center;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+#survey-form {
+  background-color: white !important;
+  padding: 4px 40px;
+  border: 1px solid #000000;
+  box-shadow: 0 0 2px 2px gray;
+  border-radius: 5px;
+}
+
+#name-label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#name {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+#email-label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#email {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+#number-label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#number {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+#learning-label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#music-question {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#instrument-questions {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.input-radio {
+  margin-right: 5px;
+}
+
+.input-checkbox {
+  margin-right: 5px;
+}
+
+textarea {
+  width: 100%;
+}
